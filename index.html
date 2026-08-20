@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://gstatic.com" crossorigin>
+<link href="https://googleapis.com" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NuqneH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <a class="site-title" href="index.html">Gabriel Anthony Gilo</a>
+    <nav class="site-nav">
+      <a href="index.html" class="current">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="typed-line" id="typed"></p>
+
+    <h1>Hi, I'm Gabriel.</h1>
+    <p class="tagline">CS student | UP Diliman | Manila, Philippines</p>
+
+    <p>I'm a 2nd year BS Computer Science student at the University of the Philippines Diliman, interested
+    in applying computer science, data science, machine learning, and statistics to problems I find
+    interesting or noteworthy. Right now I'm learning DSA, web development, and more advanced statistical
+    techniques: if you've got good resources for any of these, send them my way.</p>
+
+    <p>Outside of code, I like writing, going to the gym, sketching, and caffeine :)</p>
+
+    <h2>Let's connect!</h2>
+    
+    <ul class="links-list">
+      <li><a href="https://github.com/jibrix01">Github</a></li>
+      <li><a href="https://discordapp.com/713178581924053043">Discord</a></li>
+      <li><a href="https://www.instagram.com/">Instagram</a></li>
+      <li><a href="https://www.facebook.com/gbriel.gilo/" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://www.linkedin.com/in/gabriel-anthony-gilo-380301270/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="mailto:gabrielanthonygilo13@gmail.com">Email</a></li>
+    </ul>
+  </main>
+</div>
+
+<script>
+  const line = "nuqneH! welcome to my corner of the internet.";
+  const el = document.getElementById('typed');
+  let i = 0;
+  function type() {
+    if (i <= line.length) {
+      el.textContent = line.slice(0, i);
+      i++;
+      setTimeout(type, 35);
+    } else {
+      el.innerHTML = line + '<span class="typed-cursor">&nbsp;</span>';
+    }
+  }
+  type();
+</script>
+</body>
+</html>
